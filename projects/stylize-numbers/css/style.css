@@ -1,0 +1,117 @@
+body {
+  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background: #fafafa
+}
+
+image {
+  width: 100%;
+}
+
+.story-container:hover {
+   /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=70);
+
+  /* Netscape */
+  -moz-opacity: 0.7;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.7;
+
+  /* Good browsers */
+  opacity: 0.7;
+}
+
+.row{
+    overflow: hidden; 
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+#header {
+  width: 25.5%;
+  float: left;
+}
+
+#content {
+  width: 70%;
+  float:left;
+}
+
+.crop {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 400px;
+    height: 300px;
+    margin: -75px 0 0 -10px;
+}
+
+#content .story-container {
+  padding-bottom: 30px;
+}
+
+.stories-hr {
+    border-bottom: 0 none;
+    border-top-color: #eee;
+    margin: 4rem 0;
+    width: 130px;
+}
+
+
+/* Fonts */
+#content p {
+  color: #8a8a8a;
+}
+
+#content .story > a {
+  color: #2c3e50;
+}
+
+#content .story > a:hover{
+  text-decoration: none;
+}
+
+#header p {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+#header h1 {
+  font-size: 45px;
+}
+
+#header a {
+  color: #2c3e50;
+}
+
+#top-link-block a {
+ color: #2c3e50; 
+}
+
+#header #freecodecamp-links a {
+  display: block
+}
+
+/* Go To Top CSS */
+/* Reference: http://jsfiddle.net/panman8201/mkzrm/10/ */
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    left: 10px; /* padding from the left side of the window */
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px; /* height of link element */
+    left: 10px; /* padding from the left side of the window */
+}

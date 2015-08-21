@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="stylizeStories">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="header">
+    <h1>
+      <a href="#">Stylize Stories</a>
+    </h1>
+    <p>Camper News: Hot Stories</p>
+    <p>Made with <a href="https://angularjs.org/" target="_blank">AngularJS</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+    <hr class="stories-hr">
+    <div id="freecodecamp-links">
+      <a href="http://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a>
+      <a href="http://www.freecodecamp.com/news/" target="_blank">FreeCodeCamp: News</a>        
+    </div>
+  </div>
+
+  <div id="content" ng-controller="NewsController as news">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="stories" ng-repeat="story in news.stories">
+
+          <div class="story col-md-6">
+            <a href="{{story.link}}" target="_blank">
+              <div class="story-container">
+                <div id="image" class="crop">
+                  <img ng-src="{{ news.setImage(story) }}" class="img-responsive" />
+                </div>
+                <h3>{{story.headline}}</h3>  
+                <span ng-show="story.upVotes.length">Upvotes: {{story.upVotes.length}}</span> 
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <span id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+  </span><!-- /top-link-block -->
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="js/backToTop.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  
+
+</body>
+</html>
