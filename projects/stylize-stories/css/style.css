@@ -2,13 +2,11 @@ body {
   padding: 30px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background: #fafafa
 }
 
 image {
   width: 100%;
 }
-
 
 .story-container:hover {
    /* IE 8 */
@@ -59,7 +57,9 @@ image {
 }
 
 #content .story-container {
-  padding-bottom: 30px;
+  padding: 10px;
+  margin-bottom: 30px;
+  background: #fafafa;
 }
 
 #content .story-container .story-footer span {
@@ -128,3 +128,7 @@ image {
     bottom: 18px; /* height of link element */
     left: 10px; /* padding from the left side of the window */
 }
+
+
+
+

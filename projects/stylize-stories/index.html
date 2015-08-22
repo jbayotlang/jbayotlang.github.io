@@ -18,6 +18,13 @@
           </h1>
           <p>Camper News: Hot Stories</p>
           <p>Made with <a href="https://angularjs.org/" target="_blank">AngularJS</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+           <form action="" class="search-form">
+              <div class="form-group has-feedback">
+              <label for="search" class="sr-only">Search</label>
+              <input type="text" class="form-control" name="search" ng-model="searchText" id="search" placeholder="Search">
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+          </form>
           <hr class="stories-hr">
           <div id="freecodecamp-links">
             <a href="http://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a>
@@ -31,7 +38,7 @@
         <div id="content" ng-controller="NewsController as news">
           <div class="container-fluid">
             <div class="row">
-              <div id="stories" ng-repeat="story in news.stories">
+              <div id="stories" ng-repeat="story in news.stories | filter:searchText">
 
                 <div class="story col-md-6">
                   <a href="{{story.link}}" target="_blank">
