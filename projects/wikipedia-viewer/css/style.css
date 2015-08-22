@@ -1,0 +1,41 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
+
+#wv-content {
+  margin-top: 10%;
+}
+
+#wv-welcome {
+  margin-bottom: 5%;
+}
+
+#wv-search-form {
+  margin: 0 auto;
+  width: 40%;
+}
+
+#wv-welcome h1 {
+  font-size: 60px;
+  color: #6b15a1;
+}
+
+#wv-welcome p {
+  font-size: 18px;
+  color: #8a8a8a;
+}
+
+#wv-welcome a {
+  color: #6b15a1;
+}
+
+#wv-search-form span {
+  display: block;
+  font-size: 10em;
+  color: #6b15a1;
+}
+
+
+
+
