@@ -1,5 +1,5 @@
 (function () {
 
-  var app = angular.module('viewer', []);
+  var app = angular.module('WikipediaViewer', ['ngSantize']);
   
 })();

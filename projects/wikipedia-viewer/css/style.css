@@ -17,7 +17,7 @@ body {
   margin-bottom: 5%;
 }
 
-#wv-search-form {
+#wv-view {
   margin: 0 auto;
   width: 40%;
 }
@@ -38,6 +38,17 @@ body {
 
 #wv-search-form span {
   font-size: 10em;
+  color: #6b15a1;
+  cursor: pointer;
+}
+
+#wv-random-button {
+  margin: 0 auto;
+  width: 40%;
+}
+
+#wv-random-button span {
+  font-size: 2.5em;
   color: #6b15a1;
   cursor: pointer;
 }

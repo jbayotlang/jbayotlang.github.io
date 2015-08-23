@@ -1,0 +1,5 @@
+<div id="wv-random-button">
+  <span ng-click="random.getRandomEntry()" id="randomIcon" aria-hidden="true" class="glyphicon glyphicon-random"></span>
+</div>
+<h1>{{random.entry.title}}</h1>
+<div ng-bind-html="random.entry.extract | parseHtml"></div>
