@@ -1,6 +1,6 @@
 (function () {
 
-  var app = angular.module('stylizeStories', []);
+  var app = angular.module('stylizeStories', ['ui.bootstrap']);
 
   app.constant("moment", moment)
 
