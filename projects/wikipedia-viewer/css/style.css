@@ -160,10 +160,10 @@ body {
 }
 
 #wv-random-title {
-  animation: fadein 5.5s;
-  -moz-animation: fadein 5.5s; /* Firefox */
-  -webkit-animation: fadein 5.5s; /* Safari and Chrome */
-  -o-animation: fadein 5.5s; /* Opera */
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s; /* Firefox */
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+  -o-animation: fadein 1.5s; /* Opera */
 }
 
 @keyframes fadein {
