@@ -1,5 +1,8 @@
-<div id="wv-random-button">
-  <span ng-click="random.getRandomEntry()" id="randomIcon" aria-hidden="true" class="glyphicon glyphicon-random"></span>
+<div id="wv-random-button" class="text-center">
+  <a href class="btn" ng-click="random.getRandomEntry()">
+    <span id="randomIcon" aria-hidden="true" class="glyphicon glyphicon-random"></span>Next
+  </a>
 </div>
-<h1>{{random.entry.title}}</h1>
-<div ng-bind-html="random.entry.extract | parseHtml"></div>
+<h1 id="wv-random-title">{{random.entry.title}}</h1>
+<div id="wv-random-content" ng-bind-html="random.entry.extract | parseHtml"></div>
+<a id="goTo" ng-show="random.URL" href="{{random.URL}}" target="_blank">Go to wikipedia</a>

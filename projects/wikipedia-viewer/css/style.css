@@ -14,12 +14,12 @@ body {
 }
 
 #wv-welcome {
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
 }
 
 #wv-view {
   margin: 0 auto;
-  width: 40%;
+  width: 50%;
 }
 
 #wv-welcome h1 {
@@ -42,15 +42,30 @@ body {
   cursor: pointer;
 }
 
-#wv-random-button {
-  margin: 0 auto;
-  width: 40%;
+#wv-random-button a.btn {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #6b15a1;
+  border-radius: 4px;
+  color: #6b15a1;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 24px;
 }
 
-#wv-random-button span {
-  font-size: 2.5em;
+#wv-random-button a.btn span {
+  top: 2px;
+  margin-right: 10px;
+}
+
+#wv-random-button a.btn:hover,
+#wv-random-button a.btn:hover span {
+  background: #6b15a1 none repeat scroll 0 0;
+  color: #fff;
+}
+
+#goTo {
   color: #6b15a1;
-  cursor: pointer;
 }
 
 #wv-search-form #searchIcon {
@@ -133,5 +148,53 @@ body {
   padding: 10px 17px;
   font-size: 27px;
 
+}
 
 
+
+#wv-random-content > * {
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+}
+
+#wv-random-title {
+  animation: fadein 5.5s;
+  -moz-animation: fadein 5.5s; /* Firefox */
+  -webkit-animation: fadein 5.5s; /* Safari and Chrome */
+  -o-animation: fadein 5.5s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
