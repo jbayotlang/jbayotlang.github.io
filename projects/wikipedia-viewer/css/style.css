@@ -150,7 +150,15 @@ body {
 
 }
 
+#wv-random-button {
+  text-align: center;
+}
 
+#wv-random-button a::after {
+  content: " ";
+  margin-left: 15px;
+  opacity: 0.5;
+}
 
 #wv-random-content > * {
     animation: fadein 1.5s;
