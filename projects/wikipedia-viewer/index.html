@@ -21,14 +21,11 @@
           <p class="text-center">Made with <a href="#">AngularJS</a> and <a href="#">Bootstrap</a>.</p>
         </div>     
         <div id="wv-view" ng-view>
-          
         </div> 
-        
       </div>
-
     </div>
   </div>
-
+  <search-modal></search-modal>
   
 
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -37,12 +34,24 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-sanitize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap.min.js"></script> -->
 
+  <!-- Main -->
   <script type="text/javascript" src="app.js"></script> 
+  <!-- Route -->
   <script type="text/javascript" src="routes.js"></script> 
 
+  <!-- Filters -->
   <script type="text/javascript" src="js/filters/parseHtmlFilter.js"></script> 
+
+  <!-- Controllers -->
   <script type="text/javascript" src="js/controllers/randomController.js"></script> 
+  <script type="text/javascript" src="js/controllers/searchController.js"></script> 
+
+  <!-- Directives -->
+  <script type="text/javascript" src="js/directives/searchModalDirective.js"></script>
+
   
   
 

@@ -8,9 +8,11 @@
         controllerAs: 'random'
       })
 
-      // .when('/search', {
-        
-      // })
+      .when('/search', {
+        templateUrl: 'templates/home.html',
+        controller: 'SearchController',
+        controllerAs: 'search'
+      })
 
       .when('/', {
         templateUrl: 'templates/home.html'
