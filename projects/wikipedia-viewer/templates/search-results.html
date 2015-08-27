@@ -1,4 +1,4 @@
-<div id="wv-random-button" ng-show="searchResult.getResults().entries > 0">
+<div id="wv-random-button" ng-show="searchResult.getResults().hasData">
   <a href="#/search" class="btn">
     <span id="randomIcon" aria-hidden="true" class="glyphicon glyphicon-search"></span>"{{searchResult.getResults().query}}"
   </a>
@@ -13,7 +13,7 @@
         <div id="wv-entry-content" class="col-md-10">
           <h2><b>{{entry.title}}</b></h2>
           <p>{{entry.extract}}</p>
-          <a ng-href="{{entry.title | encodeURL}}" target="_blank">Read more</a>          
+          <a id="goTo" ng-href="{{entry.title | encodeURL}}" target="_blank">Read more</a>          
         </div>
       </div>
     </div>
@@ -22,8 +22,8 @@
     </div>
   </div>
 </div>
-<div ng-hide="searchResult.getResults().entries > 0">
-  <h2 class="text-center">Oooopppss!!!</h2>
+<div ng-hide="searchResult.getResults().hasData">
+  <h2 class="text-center">Oops!!!!</h2>
   <p class="text-center">Try searching again.</p>
   <div id="wv-random-button">
     <a href="#/search" class="btn">

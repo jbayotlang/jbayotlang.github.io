@@ -36,6 +36,10 @@ body {
   color: #6b15a1;
 }
 
+#wv-search-form {
+  margin-top: 40px;
+}
+
 #wv-search-form .home-icons {
   width: 100%;
   height: 100%;
@@ -43,10 +47,14 @@ body {
 }
 
 #wv-search-form span {
-  font-size: 8em;
+  font-size: 10em;
   line-height: 150px;
   color: #6b15a1;
   cursor: pointer;
+}
+
+#wv-search-form h2.text-center {
+  color: #8a8a8a  
 }
 
 #wv-random-button a.btn {
