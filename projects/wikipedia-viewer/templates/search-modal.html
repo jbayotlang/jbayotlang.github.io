@@ -1,0 +1,8 @@
+<div id="search">
+  <button type="button" class="close">×</button>
+  <form name="searchForm" 
+  ng-submit="searchForm.$valid && search.find(search.q)">
+      <input ng-model="search.q" type="search" placeholder="type keyword(s) here"/>
+      <button type="submit" class="btn btn-primary">SEARCH</button>
+  </form>
+</div>

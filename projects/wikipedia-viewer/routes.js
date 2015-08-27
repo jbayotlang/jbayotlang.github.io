@@ -14,6 +14,12 @@
         controllerAs: 'search'
       })
 
+      .when('/search/results', {
+        templateUrl: 'templates/search-results.html',
+        controller: 'SearchController',
+        controllerAs: 'searchResult'
+      })
+
       .when('/', {
         templateUrl: 'templates/home.html'
       })

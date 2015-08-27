@@ -1,0 +1,37 @@
+<div id="wv-random-button" ng-show="searchResult.getResults().entries > 0">
+  <a href="#/search" class="btn">
+    <span id="randomIcon" aria-hidden="true" class="glyphicon glyphicon-search"></span>"{{searchResult.getResults().query}}"
+  </a>
+</div>
+<div ng-repeat="entry in searchResult.getResults().entries">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="wv-search-results">
+        <div id="wv-entry-image" class="col-md-2 text-center">
+          <img ng-src="{{entry.thumbnail.source}}" class="img-responsive img-circle" />
+        </div>
+        <div id="wv-entry-content" class="col-md-10">
+          <h2><b>{{entry.title}}</b></h2>
+          <p>{{entry.extract}}</p>
+          <a ng-href="{{entry.title | encodeURL}}" target="_blank">Read more</a>          
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr>
+    </div>
+  </div>
+</div>
+<div ng-hide="searchResult.getResults().entries > 0">
+  <h2 class="text-center">Oooopppss!!!</h2>
+  <p class="text-center">Try searching again.</p>
+  <div id="wv-random-button">
+    <a href="#/search" class="btn">
+      <span id="randomIcon" aria-hidden="true" class="glyphicon glyphicon-search"></span>Search
+    </a>
+  </div>
+</div>
+
+
+
+

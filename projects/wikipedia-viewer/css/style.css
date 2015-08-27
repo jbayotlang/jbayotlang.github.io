@@ -10,7 +10,7 @@ body {
 }
 
 #wv-content {
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 #wv-welcome {
@@ -36,8 +36,15 @@ body {
   color: #6b15a1;
 }
 
+#wv-search-form .home-icons {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
 #wv-search-form span {
-  font-size: 10em;
+  font-size: 8em;
+  line-height: 150px;
   color: #6b15a1;
   cursor: pointer;
 }
@@ -74,6 +81,23 @@ body {
 
 #wv-search-form #randomIcon {
   margin-right: 20px;
+}
+
+#wv-search-results {
+  margin-top: 20px;
+}
+
+#wv-search-results #wv-entry-image {
+  margin-bottom: 10px;
+}
+
+#wv-search-results .img-responsive {
+    margin: 0 auto;
+}
+
+
+#wv-entry-content h2 {
+  margin-top: 0;
 }
 
 
@@ -131,19 +155,35 @@ body {
     outline: none;
 }
 #search .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 61px;
-    margin-left: -45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 61px;
+  margin-left: -45px;
+  background-color: #6b15a1;
+  border-color: #6b15a1;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 28px;
 }
+
+#search .btn:hover {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #6b15a1;
+  border-radius: 4px;
+  
+}
+
 #search .close {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  background-color: #6b15a1;
+  border-color: #6b15a1;
   opacity: 1;
   padding: 10px 17px;
   font-size: 27px;
