@@ -5,14 +5,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Wikipedia Viewer: Made with AngularJS and Bootstrap</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <title>Calculator: Made with AngularJS and MaterializeCSS</title>
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
+  <div class="row">
+    <div class="col s3">
+      <div id="calculator-header">
+        <div id="header-text">
+          <h3>Javascript Calculator</h3>
+        </div>
+        <div id="header-content">
+          <p>Made with AngularJS and MaterializeCSS</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s9">
+      <div id="calculator-app" class="container" ng-controller="CalculatorController as calc">
+        <div class="row">
+          <div class="input-field col s12">
+            <input disabled ng-model="calc.value" id="disabled" type="text" class="validate">
+          </div>
+
+          <div ng-click="calc.allClear()" class="col s3">AC</div>
+          <div ng-click="calc.clear()" class="col s3">C</div>
+          <div class="col s3">%</div>
+          <div class="col s3">/</div>
+
+          <div ng-click="calc.getDigitValue(7)" class="col s3">7</div>
+          <div ng-click="calc.getDigitValue(8)" class="col s3">8</div>
+          <div ng-click="calc.getDigitValue(9)" class="col s3">9</div>
+          <div class="col s3">x</div>
+
+          <div ng-click="calc.getDigitValue(4)" class="col s3">4</div>
+          <div ng-click="calc.getDigitValue(5)" class="col s3">5</div>
+          <div ng-click="calc.getDigitValue(6)" class="col s3">6</div>
+          <div class="col s3">-</div>
+
+          <div ng-click="calc.getDigitValue(1)" class="col s3">1</div>
+          <div ng-click="calc.getDigitValue(2)" class="col s3">2</div>
+          <div ng-click="calc.getDigitValue(3)" class="col s3">3</div>
+          <div class="col s3 double">+</div>
+
+          <div ng-click="calc.getDigitValue(0)" class="col s3">0</div>
+          <div ng-click="calc.setDecimal()" class="col s3">.</div>
+          <div class="col s3">=</div>
+          <div class="col s3 double-bottom">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
 
   <!-- Main -->
