@@ -117,6 +117,10 @@ img {
   line-height: 1.6
 }
 
+#videos #featured-video {
+  padding-top: 50px;
+}
+
 #videos h1 {
   font-size: 56px;
   color: #fff;
